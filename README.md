@@ -11,4 +11,4 @@ The code is not the most well-written, but will provide you with a sense of unde
 
 # Downloading the app on your own
 
-In order to download the app on your own, you will need to navigate to another repository to which I will link to soon, or you can wait for the approval of the app to the Google Play Store.
+In order to download the app on your own, you will need to navigate to another repository to [which I will link to here](https://github.com/souravp712/TrackCovid19APK) .~~, or you can wait for the approval of the app to the Google Play Store.~~
