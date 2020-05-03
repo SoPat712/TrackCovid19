@@ -178,7 +178,8 @@ public class YourworldFragment extends Fragment {
                         textView11.setText(Html.fromHtml("<b><i>" + "-" + dailyDeathWithCommas + "</i></b>"));
                     }
 
-
+                    //blahahahahahahahah
+                    Log.d("test","test")
                     //setData(vYourworldViewModel,world);
 
                     //final TextView textView5 = view.findViewById(R.id.text_activeCases);
