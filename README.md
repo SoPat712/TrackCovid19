@@ -9,6 +9,8 @@ Download Android Studio or any other similar code editor and run the app on your
 
 The code is not the most well-written, but will provide you with a sense of understanding as to how it works, as the code itself is not very complicated
 
-# Downloading the app on your own
+# Downloading the app onto your own (Android)phone
 
 In order to download the app on your own, you will need to navigate to my release page, [which I will link here](https://github.com/souravp712/TrackCovid19/releases/tag/v1.0) ~~, or you can wait for the approval of the app to the Google Play Store.~~
+
+Then click on TrackCovid19APK, and it will then be installed onto your phone. You may need to accept some permissions in order for the app to be installed. Then click install, and the app will be installed onto your own Android device
