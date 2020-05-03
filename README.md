@@ -5,11 +5,11 @@ Please feel free to modify this app to fit your own purposes and if needed submi
 
 # Editing the app on your own
 
-In a terminal on MacOS or Linux, run git clone https://github.com/souravp712/TrackCovid19 if you have git installed and then open the folder in Android Studio, or go to this link for an easier download process.
+In a terminal on MacOS or Linux, run git clone https://github.com/souravp712/TrackCovid19 if you have git installed and then open the folder in Android Studio or another similar code editor, or [go to this link for an easier download process on any OS.](https://github.com/souravp712/TrackCovid19/archive/master.zip)
 
-Download Android Studio or any other similar code editor and run the app on your own in order to edit the files inside.
+Download Android Studio or any other similar code editor and open the project on your own in order to edit the files inside.
 
-The code is not the most well-written, but will provide you with a sense of understanding as to how it works, as the code itself is not very complicated
+The code is not the most well-written, but will provide you with a sense of understanding as to how it works, as the code itself is not very complicated.
 
 # Downloading the app onto your own (Android)phone
 
