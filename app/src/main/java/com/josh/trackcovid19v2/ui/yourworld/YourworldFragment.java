@@ -179,7 +179,7 @@ public class YourworldFragment extends Fragment {
                     }
 
                     //blahahahahahahahah
-                    Log.d("test","test")
+                    Log.d("test","test");
                     //setData(vYourworldViewModel,world);
 
                     //final TextView textView5 = view.findViewById(R.id.text_activeCases);
