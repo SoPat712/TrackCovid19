@@ -23,7 +23,7 @@
             android:icon="@drawable/stateiconfinal"
             android:title="@string/your_state" />
     </group>
-    <!--
+
     <group
         android:id="@+id/menu_bottom"
         android:checkableBehavior="none">
@@ -38,6 +38,6 @@
             android:title="@string/send_feedback"
             />
     </group>
-    -->
+    
 
 </menu>
