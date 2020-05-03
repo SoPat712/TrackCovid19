@@ -1,7 +1,7 @@
 # TrackCovid19
 An app that helps you to track the progress of COVID-19 around the world.
 
-Please feel free to modify this app to fit your own purposes and if needed submit an issue which will be fixed ASAP.
+If it is needed, feel free to submit an issue on this Github page, and the issue will be fixed ASAP.
 
 # Downloading the app onto your own (Android)phone
 
