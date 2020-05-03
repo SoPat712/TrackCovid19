@@ -132,9 +132,15 @@ public class YourstateFragment extends Fragment {
                         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.my_spinner_style, state_list);
                         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         spin.setAdapter(adapter);
+                        if (rememberLocation[0] == -1)
+                            spin.setSelection(j[0]);
+                        else
+                            spin.setSelection(rememberLocation[0]);
                         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                rememberLocation[0] = position;
+                                j[0] = 0;
                                 Log.d("foo", state_list[position]);
                                 cases[0] = states.get(position).cases;
                                 ycases[0] = yesstates.get(position).cases;

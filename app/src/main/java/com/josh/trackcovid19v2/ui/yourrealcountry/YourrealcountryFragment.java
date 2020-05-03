@@ -125,9 +125,15 @@ public class YourrealcountryFragment extends Fragment {
                         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.my_spinner_style, country_list);
                         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         spin.setAdapter(adapter);
+                        if (rememberLocation[0] == -1)
+                            spin.setSelection(j[0]);
+                        else
+                            spin.setSelection(rememberLocation[0]);
                         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                rememberLocation[0] = position;
+                                j[0] = 0;
                                 Picasso.get().load(countries.get(position).flag).into(imageView);
                                 Log.d("foo", country_list[position]);
                                 cases[0] = countries.get(position).cases;
