@@ -58,6 +58,7 @@ public class YourrealcountryFragment extends Fragment {
 
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
+            //testere commentnasdfasdfasdfasdf
             public void onRefresh() {
                 Log.v("REFRESHING", "************** APP - SWIPE REFRESH EVENT TRIGGERED!!!!!");
 
@@ -75,7 +76,6 @@ public class YourrealcountryFragment extends Fragment {
         vYourrealcountryViewModel = ViewModelProviders.of(this, factory).get(YourrealcountryViewModel.class);
 
         vYourrealcountryViewModel.getCountriesList().observe(this, countries -> {
-            //test comment
             if (countries != null && countries.size() > 0) {
                 // set the list on TableViewModel
 
