@@ -394,7 +394,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginTop="1dp"
-            android:src="@drawable/affcountries"
+            app:srcCompat="@drawable/affcountries"
             android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="@+id/text_affectedCountriesName"
             app:layout_constraintTop_toTopOf="@+id/text_affectedCountriesData" />
@@ -410,7 +410,7 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/recovered"
+            app:srcCompat="@drawable/recovered"
             android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="@+id/text_recoveredName"
             app:layout_constraintTop_toTopOf="@+id/text_recoveredData" />
