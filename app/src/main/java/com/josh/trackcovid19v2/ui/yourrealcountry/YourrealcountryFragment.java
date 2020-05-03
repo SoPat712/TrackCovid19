@@ -75,7 +75,7 @@ public class YourrealcountryFragment extends Fragment {
         vYourrealcountryViewModel = ViewModelProviders.of(this, factory).get(YourrealcountryViewModel.class);
 
         vYourrealcountryViewModel.getCountriesList().observe(this, countries -> {
-
+            //test comment
             if (countries != null && countries.size() > 0) {
                 // set the list on TableViewModel
 

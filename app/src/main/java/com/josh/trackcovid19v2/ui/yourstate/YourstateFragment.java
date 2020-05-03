@@ -69,6 +69,7 @@ public class YourstateFragment extends Fragment {
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                //test comment 2
                 Log.v("REFRESHING", "************** APP - SWIPE REFRESH EVENT TRIGGERED!!!!!");
 
                 postRequest();
