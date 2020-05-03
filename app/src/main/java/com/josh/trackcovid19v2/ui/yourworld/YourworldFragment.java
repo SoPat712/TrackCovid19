@@ -51,7 +51,8 @@ public class YourworldFragment extends Fragment {
                 Log.v("REFRESHING", "************** APP - SWIPE REFRESH EVENT TRIGGERED!!!!!");
                 postRequest();
                 new Handler().postDelayed(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         // Stop animation (This will be after 3 seconds)
                         mSwipeRefreshLayout.setRefreshing(false);
                     }
@@ -110,17 +111,17 @@ public class YourworldFragment extends Fragment {
                 textView3.setText(Html.fromHtml("<b>" + recoveredWithCommas + "</b>"));
                 textView5.setText(Html.fromHtml("<b>" + activeCasesWithCommas + "</b>"));
                 textView6.setText(Html.fromHtml("<b><sup>" + affectedCountriesData + "</sup>" + "/<sub>251</sub></b>"));
-                textView4.setText(Html.fromHtml("Updated on "+ date));
+                textView4.setText(Html.fromHtml("Updated on " + date));
                 ImageView img1 = view.findViewById(R.id.image_level);
                 double recov = world.recovered;
                 double tcases = world.cases;
-                double percent = (recov/tcases)*100;
+                double percent = (recov / tcases) * 100;
                 String percentlegible = df.format(percent);
                 textView123.setText(Html.fromHtml("<b><i>" + percentlegible + "%</i></b>"));
                 Log.d("dfdF", String.valueOf(world.recovered));
                 Log.d("dfdF", String.valueOf(world.cases));
                 Log.d("dfdF", String.valueOf(percent));
-                int x= (int)percent;
+                int x = (int) percent;
                 ClipDrawable drawable = (ClipDrawable) img1.getDrawable();
                 drawable.setLevel(100 * x);
             }
@@ -146,41 +147,36 @@ public class YourworldFragment extends Fragment {
                     String dailyRecoveredWithCommas = numberFormat.format(recovered[0] - yRecovered[0]);
                     Log.d("foo", "I got here");
 
-                    if ((cases[0] - ycases[0]) >= 0){
-                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>"  + "+" + dailyIncWithCommas + "</i></b>");
+                    if ((cases[0] - ycases[0]) >= 0) {
+                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>" + "+" + dailyIncWithCommas + "</i></b>");
+                        SpannableString ss = new SpannableString(text);
+                        ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
+                        @SuppressLint("ResourceAsColor") ForegroundColorSpan fcsGreen = new ForegroundColorSpan(R.color.just_cuz);
+                        ss.setSpan(fcsWhite, 0, 16, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                        textView8.setText(ss);
+                    } else {
+                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>" + "-" + dailyIncWithCommas + "</i></b>");
                         SpannableString ss = new SpannableString(text);
                         ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
                         @SuppressLint("ResourceAsColor") ForegroundColorSpan fcsGreen = new ForegroundColorSpan(R.color.just_cuz);
                         ss.setSpan(fcsWhite, 0, 16, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                         textView8.setText(ss);
                     }
-                    else {
-                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>"  + "-" + dailyIncWithCommas + "</i></b>");                        SpannableString ss = new SpannableString(text);
-                        ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
-                        @SuppressLint("ResourceAsColor") ForegroundColorSpan fcsGreen = new ForegroundColorSpan(R.color.just_cuz);
-                        ss.setSpan(fcsWhite, 0, 16, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-                        textView8.setText(ss);
+                    if ((ACases[0] - yACases[0]) >= 0) {
+                        textView9.setText(Html.fromHtml("<b><i>" + "+" + dailyActWithCommas + "</i></b>"));
+                    } else {
+                        textView9.setText(Html.fromHtml("<b><i>" + "-" + dailyActWithCommas + "</i></b>"));
                     }
-                    if((ACases[0] - yACases[0]) >= 0){
-                        textView9.setText(Html.fromHtml("<b><i>"  + "+" + dailyActWithCommas + "</i></b>"));
+                    if ((recovered[0] - yRecovered[0]) >= 0) {
+                        textView10.setText(Html.fromHtml("<b><i>" + "+" + dailyRecoveredWithCommas + "</i></b>"));
+                    } else {
+                        textView10.setText(Html.fromHtml("<b><i>" + "-" + dailyRecoveredWithCommas + "</i></b>"));
                     }
-                    else {
-                        textView9.setText(Html.fromHtml("<b><i>"  + "-" + dailyActWithCommas + "</i></b>"));
+                    if ((Toddeaths[0] - yDeaths[0]) >= 0) {
+                        textView11.setText(Html.fromHtml("<b><i>" + "+" + dailyDeathWithCommas + "</i></b>"));
+                    } else {
+                        textView11.setText(Html.fromHtml("<b><i>" + "-" + dailyDeathWithCommas + "</i></b>"));
                     }
-                    if((recovered[0] - yRecovered[0]) >= 0){
-                        textView10.setText(Html.fromHtml("<b><i>"  + "+" + dailyRecoveredWithCommas + "</i></b>"));
-                    }
-                    else {
-                        textView10.setText(Html.fromHtml("<b><i>"  + "-" + dailyRecoveredWithCommas + "</i></b>"));
-                    }
-                    if((Toddeaths[0] - yDeaths[0]) >= 0){
-                        textView11.setText(Html.fromHtml("<b><i>"  + "+" + dailyDeathWithCommas + "</i></b>"));
-                    }
-                    else {
-                        textView11.setText(Html.fromHtml("<b><i>"  + "-" + dailyDeathWithCommas + "</i></b>"));
-                    }
-
-
 
 
                     //setData(vYourworldViewModel,world);
@@ -209,12 +205,13 @@ public class YourworldFragment extends Fragment {
         vYourworldViewModel.postRequest(serviceRequest);
 
     }
+
     @SuppressWarnings("deprecation")
-    public static Spanned fromHtml(String html){
-        if(html == null){
+    public static Spanned fromHtml(String html) {
+        if (html == null) {
             // return an empty spannable if the html is null
             return new SpannableString("");
-        }else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             // FROM_HTML_MODE_LEGACY is the behaviour that was used for versions below android N
             // we are using this flag to give a consistent behaviour
             return Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY);
@@ -222,24 +219,4 @@ public class YourworldFragment extends Fragment {
             return Html.fromHtml(html);
         }
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
