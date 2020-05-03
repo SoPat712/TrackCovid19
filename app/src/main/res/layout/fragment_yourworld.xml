@@ -1,0 +1,448 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.josh.trackcovid19v2.ui.yourworld.YourworldFragment">
+
+
+        <ImageView
+            android:id="@+id/text_recovered"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".20"
+            android:src="@drawable/round_rect_shape"
+            android:scaleType="fitXY"
+
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintWidth_percent=".45"/>
+
+        <ImageView
+            android:id="@+id/text_activeCases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".20"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/round_rect_shape"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent=".45"/>
+
+
+        <TextView
+            android:id="@+id/text_activeCasesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:text="@string/active_cases"
+            android:textColor="#FFEB3B"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <ImageView
+            android:id="@+id/text_totalCases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/round_rect_shape"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.123"
+            app:layout_constraintWidth_percent="0.95"
+            app:layout_constraintHeight_percent=".20"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="26dp"
+            android:src="@drawable/virusasdfasdfasdf"
+            android:adjustViewBounds="true"
+            app:layout_constraintHeight_percent=".07"
+            app:layout_constraintWidth_percent=".07"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.588" />
+
+        <TextView
+            android:id="@+id/text_totalCasesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#44E372"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <TextView
+            android:id="@+id/text_dailyIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="#44E372"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias=".9" />
+
+        <TextView
+            android:id="@+id/text_totalCasesName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Total Confirmed Cases"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.115" />
+
+
+        <TextView
+            android:id="@+id/text_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_level"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/text_affectedCountries"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".20"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/round_rect_shape"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintTop_toBottomOf="@+id/text_recovered"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="DuplicateIds"
+            app:layout_constraintWidth_percent=".45"/>
+
+        <ImageView
+            android:id="@+id/text_deaths"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".20"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/round_rect_shape"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent=".45"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/hospital"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCasesData" />
+
+        <TextView
+            android:id="@+id/text_activeCasesName6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/total_deceased"
+            android:textAlignment="gravity"
+            android:textColor="#ff0000"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/text_affectedCountriesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/affected_countries"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_affectedCountries"
+            app:layout_constraintEnd_toEndOf="@+id/text_affectedCountries"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="@+id/text_affectedCountries"
+            app:layout_constraintTop_toTopOf="@+id/text_affectedCountries"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cutive"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".95" />
+
+        <TextView
+            android:id="@+id/text_recoveredData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textAlignment="center"
+            android:textColor="#1B96F8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_recovered"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCasesData"
+            app:layout_constraintTop_toTopOf="@+id/text_recovered"
+            app:layout_constraintVertical_bias="0.67"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/text_recoveredName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/recoveredName"
+            android:textAlignment="center"
+            android:textColor="#1B96F8"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_recovered"
+            app:layout_constraintEnd_toEndOf="@+id/text_recovered"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="@+id/text_recovered"
+            app:layout_constraintTop_toTopOf="@+id/text_recovered"
+            app:layout_constraintVertical_bias="0.115" />
+
+
+        <TextView
+            android:id="@+id/text_affectedCountriesData"
+            android:layout_width="108dp"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_affectedCountries"
+            app:layout_constraintEnd_toEndOf="@+id/text_affectedCountries"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_affectedCountries"
+            app:layout_constraintTop_toTopOf="@+id/text_affectedCountries"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/text_deathsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintEnd_toEndOf="@+id/text_deaths"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_deaths"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <TextView
+            android:id="@+id/text_activeCasesIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_activeCases"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCases"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <TextView
+            android:id="@+id/text_deathsDataIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintEnd_toEndOf="@+id/text_deaths"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_deaths"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias=".9" />
+
+        <TextView
+            android:id="@+id/text_recoveredDataIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#1B96F8"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_recovered"
+            app:layout_constraintEnd_toEndOf="@+id/text_recovered"
+            app:layout_constraintHorizontal_bias=".8"
+            app:layout_constraintStart_toStartOf="@+id/text_recovered"
+            app:layout_constraintTop_toTopOf="@+id/text_recovered"
+            app:layout_constraintVertical_bias=".9" />
+
+
+        <TextView
+            android:id="@+id/text_activeCasesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_activeCases"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCases"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias=".67" />
+
+        <ImageView
+            android:id="@+id/image_level"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_rect_shape_little_lighter"
+            android:src="@drawable/clip"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent=".95" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/affcountries"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="@+id/text_affectedCountriesName"
+            app:layout_constraintTop_toTopOf="@+id/text_affectedCountriesData" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/asdfasdfsadfasdfasdfas"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName6"
+            app:layout_constraintTop_toTopOf="@+id/text_deathsData" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/recovered"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="@+id/text_recoveredName"
+            app:layout_constraintTop_toTopOf="@+id/text_recoveredData" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:gravity="left"
+            android:text="Recovered"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_level"
+            app:layout_constraintStart_toStartOf="@+id/image_level"
+            app:layout_constraintTop_toTopOf="@+id/image_level"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_level"
+            app:layout_constraintEnd_toEndOf="@+id/image_level"
+            app:layout_constraintTop_toTopOf="@+id/image_level"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

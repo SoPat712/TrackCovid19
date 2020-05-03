@@ -1,0 +1,395 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.josh.trackcovid19v2.ui.yourrealcountry.YourrealcountryFragment">
+
+        <ImageView
+            android:id="@+id/text_totalTests"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_rect_shape"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintWidth_percent=".45" />
+
+        <ImageView
+            android:id="@+id/text_testsPerOneMillion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_rect_shape"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalTests"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintWidth_percent=".45" />
+
+        <TextView
+            android:id="@+id/text_testsPerOneMillionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_testsPerOneMillion"
+            app:layout_constraintEnd_toEndOf="@+id/text_testsPerOneMillion"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_testsPerOneMillion"
+            app:layout_constraintTop_toTopOf="@+id/text_testsPerOneMillion"
+            app:layout_constraintVertical_bias="0.67" />
+
+
+        <TextView
+            android:id="@+id/text_activeCasesName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Total Tests"
+            android:textAlignment="gravity"
+            android:textColor="#2196F3"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalTests"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalTests"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="@+id/text_totalTests"
+            app:layout_constraintTop_toTopOf="@+id/text_totalTests"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/round_rect_shape_little_lighter"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".08"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent=".95" />
+
+        <ImageView
+            android:id="@+id/text_totalCases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_rect_shape"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".165"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner1"
+            app:layout_constraintVertical_bias="0.007"
+            app:layout_constraintWidth_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/text_activeCases"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:src="@drawable/round_rect_shape"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent=".43" />
+
+        <ImageView
+            android:id="@+id/text_deaths"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_rect_shape"
+            android:textAlignment="center"
+
+            android:textColor="@color/unselected_header_background_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.00"
+            app:layout_constraintWidth_percent=".45" />
+
+        <TextView
+            android:id="@+id/text_activeCasesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/active_cases"
+            android:textColor="#FFEB3B"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/text_totalCasesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#44E372"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <TextView
+            android:id="@+id/text_dailyIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#44E372"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias=".92" />
+
+        <TextView
+            android:id="@+id/text_totalCasesName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/total_confirmed_cases"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/text_totalCases"
+            app:layout_constraintTop_toTopOf="@+id/text_totalCases"
+            app:layout_constraintVertical_bias="0.115" />
+
+
+        <TextView
+            android:id="@+id/text_activeCasesName6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/total_deceased"
+            android:textAlignment="gravity"
+            android:textColor="#ff0000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/text_activeCasesName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="113dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Tests Per Million"
+            android:textAlignment="gravity"
+            android:textColor="#FFEB3B"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_testsPerOneMillion"
+            app:layout_constraintVertical_bias="0.115"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName3"
+            app:layout_constraintTop_toTopOf="@+id/text_testsPerOneMillion" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".90" />
+
+
+        <TextView
+            android:id="@+id/text_deathsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintEnd_toEndOf="@+id/text_deaths"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_deaths"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <TextView
+            android:id="@+id/text_activeCasesIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#FFEB3B"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_activeCases"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCases"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <TextView
+            android:id="@+id/text_deathsDataIncriment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_deaths"
+            app:layout_constraintEnd_toEndOf="@+id/text_deaths"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_deaths"
+            app:layout_constraintTop_toTopOf="@+id/text_deaths"
+            app:layout_constraintVertical_bias=".9" />
+
+        <TextView
+            android:id="@+id/text_totalTestsData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_totalTests"
+            app:layout_constraintEnd_toEndOf="@+id/text_totalTests"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_totalTests"
+            app:layout_constraintTop_toTopOf="@+id/text_totalTests"
+            app:layout_constraintVertical_bias="0.67" />
+
+
+        <TextView
+            android:id="@+id/text_activeCasesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_activeCases"
+            app:layout_constraintEnd_toEndOf="@+id/text_activeCases"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCases"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCases"
+            app:layout_constraintVertical_bias=".67" />
+
+        <TextView
+            android:id="@+id/text_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/hospital"
+            app:layout_constraintHeight_percent=".035"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName"
+            app:layout_constraintTop_toTopOf="@+id/text_activeCasesData"
+            app:layout_constraintWidth_percent=".07" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/asdfasdfsadfasdfasdfas"
+            app:layout_constraintHeight_percent=".035"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName6"
+            app:layout_constraintTop_toTopOf="@+id/text_deathsData"
+            app:layout_constraintWidth_percent=".07" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/syr"
+            app:layout_constraintHeight_percent=".035"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName3"
+            app:layout_constraintTop_toTopOf="@+id/text_totalTestsData"
+            app:layout_constraintWidth_percent=".07" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/syryell"
+            app:layout_constraintHeight_percent=".035"
+            app:layout_constraintStart_toStartOf="@+id/text_activeCasesName2"
+            app:layout_constraintTop_toTopOf="@+id/text_testsPerOneMillionData"
+            app:layout_constraintWidth_percent=".07" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+

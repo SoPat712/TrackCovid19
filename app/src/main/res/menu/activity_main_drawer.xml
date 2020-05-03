@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_yourworld"
+            android:icon="@drawable/globe"
+            android:title="@string/world_data" />
+        <!--
+        <item
+            android:id="@+id/nav_yourcountry"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/your_country" />
+        -->
+        <item
+            android:id="@+id/nav_yourrealcountry"
+            android:icon="@drawable/iconus"
+            android:title="@string/your_real_country" />
+        <item
+            android:id="@+id/nav_yourstate"
+            android:icon="@drawable/stateiconfinal"
+            android:title="@string/your_state" />
+    </group>
+    <!--
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_yoursettings"
+            android:icon="@drawable/ic_action_name"
+            android:title="@string/item" />
+        <item
+            android:id="@+id/nav_sendFeedback"
+            android:icon="@drawable/ic_action_name2"
+            android:title="@string/send_feedback"
+            />
+    </group>
+    -->
+
+</menu>

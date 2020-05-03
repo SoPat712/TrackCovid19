@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_yourworld">
+
+    <fragment
+        android:id="@+id/nav_yourworld"
+        android:name="com.josh.trackcovid19v2.ui.yourworld.YourworldFragment"
+        android:label="@string/menu_yourworld"
+        tools:layout="@layout/fragment_yourworld" />
+    <fragment
+        android:id="@+id/nav_yourcountry"
+        android:name="com.josh.trackcovid19v2.ui.yourcountries.YourcountriesFragment"
+        android:label="@string/menu_yourcountry"
+        tools:layout="@layout/fragment_yourcountry" />
+    <fragment
+        android:id="@+id/nav_yourrealcountry"
+        android:name="com.josh.trackcovid19v2.ui.yourrealcountry.YourrealcountryFragment"
+        android:label="@string/menu_yourrealcountry"
+        tools:layout="@layout/fragment_yourrealcountry" />
+    <fragment
+        android:id="@+id/nav_yourstate"
+        android:name="com.josh.trackcovid19v2.ui.yourstate.YourstateFragment"
+        android:label="@string/menu_yourstate"
+        tools:layout="@layout/fragment_yourstate" />
+    <fragment
+        android:id="@+id/nav_yoursettings"
+        android:name="com.josh.trackcovid19v2.SettingsActivity$SettingsFragment"
+        android:label="@string/menu_yoursettings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

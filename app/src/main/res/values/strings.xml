@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">TrackCovid19</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_yourworld">World Data</string>
+    <string name="menu_yourcountry">Countries</string>
+    <string name="menu_yourstate">United States</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sort_ascending">Sort Ascending</string>
+    <string name="sort_descending">Sort Descending</string>
+    <string name="clear_sorting">Clear</string>
+    <string name="row_show">Show 5. Row</string>
+    <string name="row_hide">Hide 5. Row</string>
+    <string name="trackcorona2020">TrackCorona2020</string>
+    <string name="joshpatra12_protonmail_com">joshpatra12@protonmail.com</string>
+    <string name="covid_19_worldwide_statistics">COVID-19 Worldwide Statistics</string>
+    <string name="world_data">World Data</string>
+    <string name="your_country">Countries</string>
+    <string name="your_state">United States</string>
+    <string name="active_cases">Active Cases</string>
+    <string name="recoveredName">Recovered</string>
+    <string name="total_deceased">Total Deceased</string>
+    <string name="affected_countries">Affected Countries</string>
+    <string name="your_real_country">Your Country</string>
+    <string name="menu_yourrealcountry">Your Country</string>
+    <string name="todo">TODO</string>
+    <string name="critical">Critical</string>
+    <string name="total_confirmed_cases">Total Confirmed Cases</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="item">Settings</string>
+    <string name="menu_yoursettings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="send_feedback">Send Feedback</string>
+</resources>
