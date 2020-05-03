@@ -34,8 +34,6 @@ import java.util.Locale;
 
 public class YourworldFragment extends Fragment {
 
-    private static YourworldFragment BdTimeUtils;
-    private YourworldViewModel yourworldViewModel;
     private com.josh.trackcovid19v2.ui.viewmodel.YourworldViewModel vYourworldViewModel;
     private static DecimalFormat df = new DecimalFormat("0.00");
 

@@ -21,7 +21,9 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer">
-
+        <!--
+           Created by Josh Patra or souravp12 on Github. Please credit other people for their work, and do not steal others work. This comment has been added to prevent people from stealing my work and publishing it as their own.
+           -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

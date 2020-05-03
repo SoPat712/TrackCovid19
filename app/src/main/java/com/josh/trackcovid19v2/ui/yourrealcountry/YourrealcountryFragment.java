@@ -28,9 +28,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.josh.trackcovid19v2.R;
 import com.josh.trackcovid19v2.model.ServiceRequest;
-import com.josh.trackcovid19v2.ui.viewmodel.YourcountriesViewModel;
 import com.josh.trackcovid19v2.ui.viewmodel.YourrealcountryViewModel;
-import com.josh.trackcovid19v2.ui.viewmodel.yourCountriesViewModelFactory;
 import com.josh.trackcovid19v2.ui.viewmodel.yourrealcountryViewModelFactory;
 import com.josh.trackcovid19v2.utility.InjectorUtils;
 import com.squareup.picasso.Picasso;
@@ -64,7 +62,8 @@ public class YourrealcountryFragment extends Fragment {
 
                 postRequest();
                 new Handler().postDelayed(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         // Stop animation (This will be after 3 seconds)
                         mSwipeRefreshLayout.setRefreshing(false);
                     }
@@ -132,6 +131,7 @@ public class YourrealcountryFragment extends Fragment {
                         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                //Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing asdf it as their own.
                                 rememberLocation[0] = position;
                                 j[0] = 0;
                                 Picasso.get().load(countries.get(position).flag).into(imageView);
@@ -163,7 +163,7 @@ public class YourrealcountryFragment extends Fragment {
                                 String testsWithCommas = numberFormat.format(countries.get(position).tests);
                                 String testsMilWithcommas = numberFormat.format(countries.get(position).testsPerMillion);
                                 Date date = new Date(countries.get(position).updated);
-                                textView13.setText(Html.fromHtml("Updated on "+ date));
+                                textView13.setText(Html.fromHtml("Updated on " + date));
                                 textView.setText(Html.fromHtml("<center><b>" + totalCasesWithCommas + "</b></center>"));
                                 textView3.setText(Html.fromHtml("<b>" + deathWithCommas + "</b>"));
                                 textView2.setText(Html.fromHtml("<b>" + recoveredWithCommas + "</b>"));
@@ -227,16 +227,14 @@ public class YourrealcountryFragment extends Fragment {
                             }
                         });
 
-                    }
-                    else{
-                        Log.d("lol", "didn't work something broken inside one." + ",      name: "+"not found at all");
+                    } else {
+                        Log.d("lol", "didn't work something broken inside one." + ",      name: " + "not found at all");
                     }
 
                 });
 
-            }
-            else{
-                Log.d("lol", "didn't work something broken outside one." + ",      name: "+"not found at all");
+            } else {
+                Log.d("lol", "didn't work something broken outside one." + ",      name: " + "not found at all");
             }
         });
         postRequest();

@@ -336,19 +336,23 @@
             app:layout_constraintStart_toStartOf="@+id/text_activeCases"
             app:layout_constraintTop_toTopOf="@+id/text_activeCases"
             app:layout_constraintVertical_bias=".67" />
-
+        <!--
+           Createdasd by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+           -->
         <TextView
             android:id="@+id/text_updated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:gravity="center"
+            android:text="Created by Josh Patra"
             android:textAlignment="center"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".97"
             tools:ignore="DuplicateIds" />
 
         <ImageView

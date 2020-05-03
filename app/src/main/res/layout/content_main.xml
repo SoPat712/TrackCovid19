@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
-
+    <!--
+       Created by Josh Patra or souravp12 on Github..      asdfasfasdfasdf    This comment has been added to prevent people from stealing my work and publishing it as their own.
+       -->
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
