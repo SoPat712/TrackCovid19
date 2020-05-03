@@ -15,4 +15,4 @@ The code is not the most well-written, but will provide you with a sense of unde
 
 In order to download the app on your own, you will need to navigate to my release apk download page, [which I will link here](https://github.com/souravp712/TrackCovid19/releases/download/v1.0/TrackCovid19.apk) ~~, or you can wait for the approval of the app to the Google Play Store.~~
 
-Then click on TrackCovid19APK, and it will then be installed onto your phone. You may need to accept some permissions in order for the app to be installed. Then click install, and the app will be installed onto your own Android device
+You may need to accept some permissions in order for the app to be installed. Then click install, and the app will be installed onto your own Android device
