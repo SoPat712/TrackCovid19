@@ -179,6 +179,7 @@ public class YourworldFragment extends Fragment {
                     }
 
                     //blahahahahahahahah
+                    //semicolon has been added
                     Log.d("test","test");
                     //setData(vYourworldViewModel,world);
 
