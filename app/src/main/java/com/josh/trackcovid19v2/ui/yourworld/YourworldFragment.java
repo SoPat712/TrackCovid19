@@ -153,7 +153,7 @@ public class YourworldFragment extends Fragment {
                         ss.setSpan(fcsWhite, 0, 16, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                         textView8.setText(ss);
                     } else {
-                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>" + "-" + dailyIncWithCommas + "</i></b>");
+                        Spanned text = Html.fromHtml("<i>Daily Increment: " + "<b>" + "" + dailyIncWithCommas + "</i></b>");
                         SpannableString ss = new SpannableString(text);
                         ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
                         @SuppressLint("ResourceAsColor") ForegroundColorSpan fcsGreen = new ForegroundColorSpan(R.color.just_cuz);
@@ -163,17 +163,17 @@ public class YourworldFragment extends Fragment {
                     if ((ACases[0] - yACases[0]) >= 0) {
                         textView9.setText(Html.fromHtml("<b><i>" + "+" + dailyActWithCommas + "</i></b>"));
                     } else {
-                        textView9.setText(Html.fromHtml("<b><i>" + "-" + dailyActWithCommas + "</i></b>"));
+                        textView9.setText(Html.fromHtml("<b><i>" + "" + dailyActWithCommas + "</i></b>"));
                     }
                     if ((recovered[0] - yRecovered[0]) >= 0) {
                         textView10.setText(Html.fromHtml("<b><i>" + "+" + dailyRecoveredWithCommas + "</i></b>"));
                     } else {
-                        textView10.setText(Html.fromHtml("<b><i>" + "-" + dailyRecoveredWithCommas + "</i></b>"));
+                        textView10.setText(Html.fromHtml("<b><i>" + "" + dailyRecoveredWithCommas + "</i></b>"));
                     }
                     if ((Toddeaths[0] - yDeaths[0]) >= 0) {
                         textView11.setText(Html.fromHtml("<b><i>" + "+" + dailyDeathWithCommas + "</i></b>"));
                     } else {
-                        textView11.setText(Html.fromHtml("<b><i>" + "-" + dailyDeathWithCommas + "</i></b>"));
+                        textView11.setText(Html.fromHtml("<b><i>" + "" + dailyDeathWithCommas + "</i></b>"));
                     }
 
                     //blahahahahahahahah
