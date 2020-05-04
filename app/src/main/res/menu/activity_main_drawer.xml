@@ -27,11 +27,12 @@
     <group
         android:id="@+id/menu_bottom"
         android:checkableBehavior="none">
-
+        <!--
         <item
             android:id="@+id/nav_yoursettings"
             android:icon="@drawable/ic_action_name"
             android:title="@string/item" />
+            -->
         <item
             android:id="@+id/nav_sendFeedback"
             android:icon="@drawable/ic_action_name2"
