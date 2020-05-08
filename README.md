@@ -12,7 +12,7 @@ You may need to accept some permissions in order for the app to be installed. Th
 # Editing the app on your own
 
 Code Rating: ![Android CI](https://github.com/souravp712/TrackCovid19/workflows/Android%20CI/badge.svg) 
-Gradle check: ![Java CI with Gradle](https://github.com/souravp712/TrackCovid19/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=master)
+Gradle check: ![Java CI with Gradle](https://github.com/souravp712/TrackCovid19/workflows/Java%20CI%20with%20Gradle/badge.svg)
 
 In a terminal on MacOS or Linux, run ```git clone https://github.com/souravp712/TrackCovid19``` if you have git installed and then open the folder in Android Studio or another similar code editor, or [go to this link for an easier download process on any OS.](https://github.com/souravp712/TrackCovid19/archive/master.zip)
 
