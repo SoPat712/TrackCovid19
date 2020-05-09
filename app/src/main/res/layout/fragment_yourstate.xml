@@ -210,7 +210,7 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/text_totalCases"
             app:layout_constraintEnd_toEndOf="@+id/text_totalCases"
-            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="@+id/text_totalCases"
             app:layout_constraintTop_toTopOf="@+id/text_totalCases"
             app:layout_constraintVertical_bias="0.115" />
