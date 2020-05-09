@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -88,6 +87,10 @@ public class SendFeedbackFragment extends Fragment {
                 builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface dialog, int which) {
+
+                        String toS = "joshpatra12@protonmail.com";
+                        String subS = subject.getText().toString();
+                        String mesS = message.getText().toString();
                         String system = System.getProperty("os.version");
                         Integer API = Build.VERSION.SDK_INT;
                         String device = Build.DEVICE;
@@ -102,44 +105,17 @@ public class SendFeedbackFragment extends Fragment {
                                 .getMetrics(displayMetrics);
                         int height = displayMetrics.heightPixels + getNavigationBarHeight();
                         int width = displayMetrics.widthPixels;
-                        String toS = "joshpatra12@protonmail.com";
-                        String subS = subject.getText().toString();
-                        String mesS = message.getText().toString() + "\n\n\n\n\n\n" + "\nAPI: " + API + "\nDevice: "
-                                + device + "\nModel: "+ model +"\nType:" + type +"\nUser:" + user +
-                                "\nDisplay height: " + height + "\nDisplay width: " + width;
-
-
-
-                        /*
-                        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                        emailIntent.putExtra(Intent.EXTRA_EMAIL, toS);
-                        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subS);
-                        emailIntent.putExtra(Intent.EXTRA_TEXT, mesS + "\n\n\n\n\n\n" + "\nAPI: " + API + "\nDevice: "
-                                + device + "\nModel: " + model + "\nType:" + type + "\nUser:" + user +
-                                "\nDisplay height: " + height + "\nDisplay width: " + width);
-                        startActivity(Intent.createChooser(emailIntent, "Choose an app to sdend the email with ⬇️"));
-
-                         */
-                        /*
                         Intent email = new Intent(Intent.ACTION_SEND);
 
                         email.putExtra(Intent.EXTRA_EMAIL , new String [] {toS});
-
                         email.putExtra(Intent.EXTRA_SUBJECT , subS);
-                        email.putExtra(Intent.EXTRA_TEXT , mesS);
+                        email.putExtra(Intent.EXTRA_TEXT , mesS + "\n\n\n\n\n\n" + "\nAPI: " + API + "\nDevice: "
+                                + device + "\nModel: "+ model +"\nType:" + type +"\nUser:" + user +
+                                "\nDisplay height: " + height + "\nDisplay width: " + width);
+
                         email.setType("message/rfc822");
-                        startActivity(Intent.createChooser(email, "Choose an app to send the email with ⬇"));
-                        *
-
-                         */
-                        Intent intent = new Intent(Intent.ACTION_SENDTO);
-                        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                        intent.putExtra(Intent.EXTRA_EMAIL, new String [] {toS});
-                        intent.putExtra(Intent.EXTRA_SUBJECT, subS);
-                        intent.putExtra(Intent.EXTRA_TEXT, mesS);
-                        startActivity(Intent.createChooser(intent, "Choose an app to send the email with ⬇"));
+                        startActivity(Intent.createChooser(email, "Choose an app to send the email with"));
                         dialog.dismiss();
-
                     }
                 });
 
@@ -159,7 +135,6 @@ public class SendFeedbackFragment extends Fragment {
         });
         return view;
     }
-
     private int getNavigationBarHeight() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             DisplayMetrics metrics = new DisplayMetrics();

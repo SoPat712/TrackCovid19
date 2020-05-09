@@ -31,9 +31,8 @@
 
     <Button
         android:id="@+id/magicbtn"
-        android:layout_width="192dp"
-        android:layout_height="44dp"
-        android:background="@drawable/btn_rounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="I Understand"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
