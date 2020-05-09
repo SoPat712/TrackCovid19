@@ -80,6 +80,10 @@ public class SendFeedbackFragment extends Fragment {
         sendE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(android.view.View v) {
+                message.setCursorVisible(false);
+                message.clearFocus();
+                subject.setCursorVisible(false);
+                subject.clearFocus();
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
                 builder.setTitle("Data");

@@ -1,6 +1,7 @@
 package com.josh.trackcovid19v2.ui.yourworld;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ClipDrawable;
 import android.os.Build;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,6 +44,7 @@ public class YourworldFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_yourworld, container, false);
+        hideKeyboardFrom(getActivity());
         SwipeRefreshLayout mSwipeRefreshLayout = view.findViewById(R.id.swiperefresh);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -196,8 +199,16 @@ public class YourworldFragment extends Fragment {
 
         return view;
     }
-
-
+    public static void hideKeyboardFrom(Activity activity) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        //Find the currently focused view, so we can grab the correct window token from it.
+        View view = activity.getCurrentFocus();
+        //If no view currently has focus, create a new one, just so we can grab a window token from it
+        if (view == null) {
+            view = new View(activity);
+        }
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
     private void postRequest() {
         int size = 100; // this is the count of the data items.
         int page = 1; // Which page do we want to get from the server.
