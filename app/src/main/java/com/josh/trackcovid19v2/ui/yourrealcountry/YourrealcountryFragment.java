@@ -131,7 +131,7 @@ public class YourrealcountryFragment extends Fragment {
                         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                                //Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing asdf it as their own.
+                                //Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing asdf it as their own.
                                 rememberLocation[0] = position;
                                 j[0] = 0;
                                 Picasso.get().load(countries.get(position).flag).into(imageView);

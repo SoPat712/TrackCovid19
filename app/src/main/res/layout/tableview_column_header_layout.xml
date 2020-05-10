@@ -9,7 +9,7 @@
     android:background="@color/unselected_header_background_color"
     android:orientation="vertical">
     <!--
-       Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own. Random characters have also been added
+       Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own. Random characters have also been added
        in to prevent find and replace.
        -->
     <FrameLayout
@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
         <!--
-           Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+           Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
            -->
         <LinearLayout
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
                 android:layout_height="@dimen/table_view_cell_height"
                 android:background="@color/unselected_header_background_color">
     <!--
-       Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
     <LinearLayout
         android:id="@+id/row_header_container"

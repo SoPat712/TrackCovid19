@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintWidth_percent=".20" />
     <!--
-       Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
     <TextView
         android:id="@+id/textView6"

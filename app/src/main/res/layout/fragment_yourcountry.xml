@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.josh.trackcovid19v2.ui.yourcountries.YourcountriesFragment">
     <!--
-       Created by Josh Patra or   asdfas souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or   asdfas SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
     <com.evrencoskun.tableview.TableView
         android:id="@+id/countries_TableView"

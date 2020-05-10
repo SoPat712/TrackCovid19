@@ -8,7 +8,7 @@
     android:background="@color/unselected_background_color"
     android:orientation="vertical">
     <!--
-       Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
 
     <org.fabiomsr.moneytextview.MoneyTextView

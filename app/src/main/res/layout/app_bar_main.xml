@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.josh.trackcovid19v2.MainActivity">
     <!--
-       Created by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

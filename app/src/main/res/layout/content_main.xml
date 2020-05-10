@@ -7,7 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
     <!--
-       Created by Josh Patra or souravp12 on Github..      asdfasfasdfasdf    This comment has been added to prevent people from stealing my work and publishing it as their own.
+       Created by Josh Patra or SoPat712 on Github..      asdfasfasdfasdf    This comment has been added to prevent people from stealing my work and publishing it as their own.
        -->
     <fragment
         android:id="@+id/nav_host_fragment"

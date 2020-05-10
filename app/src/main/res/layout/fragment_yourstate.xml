@@ -337,7 +337,7 @@
             app:layout_constraintTop_toTopOf="@+id/text_activeCases"
             app:layout_constraintVertical_bias=".67" />
         <!--
-           Createdasd by Josh Patra or souravp12 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
+           Createdasd by Josh Patra or SoPat712 on Github.. This comment has been added to prevent people from stealing my work and publishing it as their own.
            -->
         <TextView
             android:id="@+id/text_updated"
