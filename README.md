@@ -5,7 +5,7 @@ If it is needed, feel free to submit an issue on this Github page, and the issue
 
 # Downloading the app onto your own (Android)phone
 
-In order to download the app on your own, you will need to navigate to my release apk download page, [which I will link here](https://github.com/SoPat712/TrackCovid19/releases/download/v1.3/TrackCovid19.apk), or you can wait for the approval of the app to the Google Play Store.
+In order to download the app on your own, you will need to navigate to my release apk download page, [which I will link here](https://github.com/SoPat712/TrackCovid19/releases/download/v1.4/TrackCovid19.apk), or you can wait for the approval of the app to the Google Play Store.
 
 You may need to accept some permissions in order for the app to be installed. Then click install, and the app will be installed onto your own Android device for your own usages.
 
