@@ -13,6 +13,7 @@ You may need to accept some permissions in order for the app to be installed. Th
 
 Code Rating: ![Android CI](https://github.com/SoPat712/TrackCovid19/workflows/Android%20CI/badge.svg) 
 Gradle check: ![Java CI with Gradle](https://github.com/SoPat712/TrackCovid19/workflows/Java%20CI%20with%20Gradle/badge.svg)
+Travis CI: ![Travis CI](https://travis-ci.org/SoPat712/TrackCovid19.svg?branch=master)
 
 In a terminal on MacOS or Linux, run ```git clone https://github.com/SoPat712/TrackCovid19``` if you have git installed and then open the folder in Android Studio or another similar code editor, or [go to this link for an easier download process on any OS.](https://github.com/SoPat712/TrackCovid19/archive/master.zip)
 
