@@ -3,7 +3,7 @@ An app that helps you to track the progress of COVID-19 around the world.
 
 If it is needed, feel free to submit an issue on this Github page, and the issue will be fixed ASAP.
 
-# Downloading the app onto your own (Android)phone
+# Downloading the app onto your own (Android) phone
 
 In order to download the app on your own, you will need to navigate to my release apk download page, [which I will link here](https://github.com/SoPat712/TrackCovid19/releases/download/v1.4/TrackCovid19.apk), or you can wait for the approval of the app to the Google Play Store.
 
