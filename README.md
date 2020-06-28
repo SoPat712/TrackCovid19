@@ -18,4 +18,4 @@ In a terminal on MacOS or Linux, run ```git clone https://github.com/SoPat712/Tr
 
 Download Android Studio or any other similar code editor and open the project on your own in order to edit the files inside.
 
-The code is not the most well-written, but will provide you with a sense of understanding as to how it works, as the code itself is not very complicated.
+The code is not the most well-written, but still shouldn't be too difficult to understand. It's pretty basic Java.
