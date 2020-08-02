@@ -18,25 +18,25 @@ import retrofit2.http.Query;
 public interface RestApi {
 
     @Headers("Content-Type: application/json")
-    @GET("v2/states")
+    @GET("v3/covid-19/states")
     Call<List<States>>  getStatess();
 
-    @GET("v2/states")
+    @GET("v3/covid-19/states")
     Call<List<StatesPojo>>  getStates(@Query("yesterday") int y);
 
-    @GET("v2/states")
+    @GET("v3/covid-19/states")
     Call<List<YesStatesPojo>>  getYesStates(@Query("yesterday") int y);
 
-    @GET("/v2/countries")
+    @GET("/v3/covid-19/countries")
     Call<List<CountriesPojo>>  getCountries(@Query("yesterday") int y);
 
-    @GET("/v2/countries")
+    @GET("/v3/covid-19/countries")
     Call<List<YesCountriesPojo>>  getYesCountries(@Query("yesterday") int y);
 
-    @GET("v2/all")
+    @GET("v3/covid-19/all")
     Call<World> getWorld();
 
-    @GET("v2/all?yesterday=true")
+    @GET("v3/covid-19/all?yesterday=true")
     Call<YesWorld> getYesWorld();
 
     //countries/USA

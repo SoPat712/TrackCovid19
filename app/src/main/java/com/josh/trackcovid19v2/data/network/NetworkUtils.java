@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkUtils {
 
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
-    private static final String BASE_URL = "https://corona.lmao.ninja/";
+    private static final String BASE_URL = "https://disease.sh/";
 
     private static Retrofit getRetrofit() {
         return new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory
