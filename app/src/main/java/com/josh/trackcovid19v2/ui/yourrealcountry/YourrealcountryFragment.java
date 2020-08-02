@@ -121,7 +121,7 @@ public class YourrealcountryFragment extends Fragment {
                         final TextView textView12 = view.findViewById(R.id.text_testsPerOneMillionData);
                         final TextView textView13 = view.findViewById(R.id.text_updated);
                         final ImageView imageView = view.findViewById(R.id.htmlImageGetter);
-                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.my_spinner_style, country_list);
+                        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.my_spinner_style, country_list);
                         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                         spin.setAdapter(adapter);
                         if (rememberLocation[0] == -1)
@@ -257,10 +257,7 @@ public class YourrealcountryFragment extends Fragment {
     }
 
     private void postRequest() {
-        int size = 100; // this is the count of the data items.
-        int page = 1; // Which page do we want to get from the server.
         ServiceRequest serviceRequest = new ServiceRequest();
         vYourrealcountryViewModel.postRequest(serviceRequest);
-
     }
 }
