@@ -30,7 +30,13 @@
             android:layout_gravity="bottom"
             android:orientation="vertical"
             android:padding="16dp">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#423E3E"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:text="v2.0" />
             <TextView
                 android:id="@+id/logout"
                 android:layout_width="match_parent"

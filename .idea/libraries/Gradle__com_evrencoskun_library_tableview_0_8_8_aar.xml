@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.evrencoskun.library:tableview:0.8.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f258d0e19b0948446be05080d8982abc/jetified-tableview-0.8.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f258d0e19b0948446be05080d8982abc/jetified-tableview-0.8.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dce61b862b666a5dd0c6da358d447dd/jetified-tableview-0.8.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dce61b862b666a5dd0c6da358d447dd/jetified-tableview-0.8.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dce61b862b666a5dd0c6da358d447dd/jetified-tableview-0.8.8/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.evrencoskun.library/tableview/0.8.8/955d4ff9c5f6b8cb26dd62c7c12dbf37f0823d32/tableview-0.8.8-javadoc.jar!/" />
