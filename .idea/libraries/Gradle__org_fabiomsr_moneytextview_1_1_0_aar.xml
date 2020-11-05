@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: org.fabiomsr:moneytextview:1.1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92c7adb16b7ee63d2b5eee347c4c7be3/jetified-moneytextview-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92c7adb16b7ee63d2b5eee347c4c7be3/jetified-moneytextview-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92c7adb16b7ee63d2b5eee347c4c7be3/jetified-moneytextview-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15b434c8d5d0cb15fa57b293760e3cff/jetified-moneytextview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15b434c8d5d0cb15fa57b293760e3cff/jetified-moneytextview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15b434c8d5d0cb15fa57b293760e3cff/jetified-moneytextview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.fabiomsr/moneytextview/1.1.0/c2bafa388279f9e60326a2b14909ca851fe50bb2/moneytextview-1.1.0-javadoc.jar!/" />
