@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#423E3E"
+                android:textColor="@color/unselected_text_color"
                 android:gravity="center"
                 android:textSize="13dp"
                 android:text="v2.0" />
@@ -41,7 +41,7 @@
                 android:id="@+id/logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#423E3E"
+                android:textColor="@color/unselected_text_color"
                 android:textSize="13dp"
                 android:gravity="center"
                 android:text="Sources: JHU, WHO, corona.lmao.ninja" />

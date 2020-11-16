@@ -10,7 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.josh.trackcovid19v2.ui.yourrealcountry.YourrealcountryFragment">
-
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/unselected_background_color" />
         <ImageView
             android:id="@+id/text_totalTests"
             android:layout_width="0dp"

@@ -8,7 +8,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath 'com.evrencoskun.library:tableview:0.8.9'
 
 

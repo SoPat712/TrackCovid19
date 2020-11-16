@@ -11,7 +11,11 @@
         android:orientation="vertical"
         tools:context="com.josh.trackcovid19v2.ui.yourworld.YourworldFragment">
 
-
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/unselected_background_color" />
         <ImageView
             android:id="@+id/text_recovered"
             android:layout_width="0dp"
@@ -423,7 +427,7 @@
             android:layout_marginLeft="26dp"
             android:gravity="left"
             android:text="Recovered"
-            android:textColor="#000000"
+            android:textColor="@color/extraforRecoved"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="@+id/image_level"
             app:layout_constraintStart_toStartOf="@+id/image_level"
@@ -437,7 +441,7 @@
             android:layout_marginEnd="26dp"
             android:layout_marginRight="26dp"
             android:gravity="right"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="@+id/image_level"
             app:layout_constraintEnd_toEndOf="@+id/image_level"

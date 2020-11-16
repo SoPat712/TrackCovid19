@@ -10,7 +10,7 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#4942B7" />
+        android:background="@color/homeactivity" />
 
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="This app is for educational and informative purposes only, this is not intended to harm anyone nor is it indended to spread misinformation. For more information, please go to reputable sources such as WHO and JHU for further information regarding sensitive topics such as these."
-        android:textColor="#ffffff"
+        android:textColor="@color/popup_menu_item_text_color"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
