@@ -26,8 +26,8 @@ public class HomeActivity extends AppCompatActivity {
     private int SPLASH_SCREEN_TIME_OUT = 30000;
     private Button button;
     private Handler handler;
-    private int STORAGE_PERMISSION_CODE = 1;
-    private int INTERNET_PERMISSION_CODE = 1;
+    private final int STORAGE_PERMISSION_CODE = 1;
+    private final int INTERNET_PERMISSION_CODE = 1;
     private Runnable myRunnable;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
