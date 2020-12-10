@@ -24,6 +24,8 @@ public class SettingsActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+        System.out.println("SettingsActivity OnCreate");
+        Log.i("steaass","asdfasdfasfdasdfafs onCretaaa");
     }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {
@@ -37,13 +39,11 @@ public class SettingsActivity extends AppCompatActivity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                        darkModeSwitch.setDefaultValue(true);
                         Log.i("aa","set off dark mode");
                     } else {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                        darkModeSwitch.setDefaultValue(false);
                         Log.i("aa","set on dark mode");
-
+                        darkModeSwitch.setEnabled(true);
                     }
                     return false;
                 }

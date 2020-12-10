@@ -1,7 +1,6 @@
 package com.josh.trackcovid19v2;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -43,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(), "Data Imported Successfully",Toast.LENGTH_SHORT).show();
     }
+
     public static void hideKeyboardFrom(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.

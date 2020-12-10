@@ -7,7 +7,7 @@
         <SwitchPreference
             android:key="darkMode"
             android:title="Dark Mode"
-            android:defaultValue="false"
+
             android:summaryOff="Disabled"
             android:summaryOn="Enabled"/>
 
